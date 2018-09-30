@@ -2,13 +2,13 @@
   <div class="container">
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="../freemarker/home">Home</a></li>
+        <li><a href="${homelink}">Home</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Log Admin</h1> 
+  <h1>${hometitle}</h1> 
 </div>
 

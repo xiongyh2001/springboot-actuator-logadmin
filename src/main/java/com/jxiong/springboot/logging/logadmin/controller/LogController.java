@@ -17,6 +17,7 @@ package com.jxiong.springboot.logging.logadmin.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,13 +26,26 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class LogController {
 
-	 private static final Logger logger = LoggerFactory.getLogger(LogController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LogController.class);
+	
+	@Value("${logging.admin.home.link}")
+	private String homelink;
+
+	@Value("${logging.admin.home.title}")
+	private String hometitle;
+	
+	@Value("${server.servlet.context-path}")
+	private String contextroot;
+			
 	 
     @GetMapping("/admin")
 	public String logProcess(Model model) {
     	logger.debug(">>LogController<<starting...");
        	
-    	
+		model.addAttribute("homelink", homelink);
+		model.addAttribute("hometitle", hometitle);
+		model.addAttribute("contextroot", contextroot);
+				
 		logger.debug(">>LogController<<done...");
 		return "log";
 	}

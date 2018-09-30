@@ -18,8 +18,8 @@ var TABLE = function(){
 	/**
 	 * private variables
 	 */
-	var baseURL = "/logging/actuator/logadmin";
-	
+	var URL = "/actuator/logadmin";
+
 	/**
 	 * private functions
 	 */
@@ -31,7 +31,7 @@ var TABLE = function(){
 		        "processing": true,
 		        "paging":   false,
 		        "order": [[ 0, "asc" ]],
-		        "ajax": baseURL,
+		        "ajax": $('#contextrootId').val()+URL,
 		        "columns": [
 			            { "data": "className" },
 			            { "data": "effectiveLevel" },
@@ -58,7 +58,7 @@ var TABLE = function(){
 		    	
 		    	event.preventDefault();
 		        //alert( 'You clicked on '+ $(this).attr('href') + ' ' + $(this).attr('name'));
-		    	var sendurl = baseURL + '/' + $(this).attr('name');
+		    	var sendurl = $('#contextrootId').val() + URL + '/' + $(this).attr('name');
 		    	var jReq = {
 		    			configuredLevel: $(this).attr('href')
 		    	}

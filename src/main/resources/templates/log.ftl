@@ -14,7 +14,7 @@
 
 <!-- Container (Contact Section) -->
 <div id="showcase" class="container-fluid bg-grey text-center">
-
+<input type="hidden" id="contextrootId" name="contextroot" value="${contextroot}">
 <table id="table" class="display cell-border" style="width:100%">
         <thead>
             <tr>
