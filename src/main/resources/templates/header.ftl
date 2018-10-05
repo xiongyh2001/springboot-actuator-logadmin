@@ -25,7 +25,7 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-color: #cc6600;
+      background-color: #4466cc;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -37,17 +37,17 @@
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: #cc6600;
+      color: #4466cc;
       font-size: 50px;
   }
   .logo {
-      color: #cc6600;
+      color: #4466cc;
       font-size: 200px;
   }
 
   .navbar {
       margin-bottom: 0;
-      background-color: #cc6600;
+      background-color: #4466cc;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -60,7 +60,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #cc6600 !important;
+      color: #4466cc !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -70,7 +70,7 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #cc6600;
+      color: #4466cc;
   }
   .slideanim {visibility:hidden;}
   .slide {
